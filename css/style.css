@@ -5,7 +5,7 @@
 }
 
 #grilla {
-    width: 100vw;
+    width: 99vw;
     height:500vh;
     display: grid;
     grid-template-columns: auto;
@@ -22,7 +22,7 @@
 
 header {
     grid-area: header;
-
+    background-color: black;
    display: grid;
    grid-template-columns: 0.5fr 1fr 1fr;
    grid-template-rows: 0.2fr auto;
@@ -38,21 +38,92 @@ header {
 
 #nav {
     grid-area: nav;
+    display: flex;
     justify-content: end;
+    margin-left: 50px;
+;
 
 }
 
+.menu__item {
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: #4717f6;
+}
+
+button {
+    
+    border: none;
+    color: #ffffff;
+    width: 7em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(
+        90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4
+    );
+    background-size: 300%;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 1;
+}
+button:hover {
+    animation: animation 8s linear infinite;
+    border: none;
+}
+
+@keyframes animation {
+    0% {background-position: 0%;}
+    100% {background-position: 400%;}
+}
+
+button:before {
+    content: "";
+   
+top: 5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(
+        90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4
+    );
+    background-size: 400%;
+    border-radius: 35%;
+    transition: 1s;
+}
+
+button:hover::beffore {
+    filter: blur(20px);
+}
+
+
+
+
+
+
+
+
+
 #redesmenu {
     grid-area: redesmenu;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 main {
     grid-area: main;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-template-areas: 
-    "carrousel"
     "carrousel"
     "carrousel"
     "categorias"
