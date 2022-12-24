@@ -4,58 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>¿Quienes Somos?</title>
 </head>
-<body>
+
+<body id="grillaquienes">
+
     <header>
-            <div class="menu__caja__logo">
-                <a href="../index.html" id="arriba"><img src="../images/logo.png" alt="logo" class="menu__logo"></a>
-            </div>
-            <nav class="menu__barra">
-                <ul>
-                    <li class="menu__item"><a href="../pages/productos.html">Productos</a></li>
-                    <li class="menu__item"><a href="../pages/servicios.html">Servicios</a></li>
-                    <li class="menu__item active"><a href="../pages/quienes_somos.html">¿Quienes Somos?</a></li>
-                    <li class="menu__item "><a href="../pages/donde_encontrarnos.html">¿Donde encontrarnos?</a></li>
-                    <li class="menu__item"><a href="../pages/ingreso.html">Ingreso/Registro</a></li>
-                    <li class="menu__item">
-                        <form>
-                            <input  type="search" name="q" placeholder="Buscar" />
-                            <input class="menu__buscar" type="submit" value="¡Vamos!" />
-                        </form></li>
-                </ul>
-                
-            </nav>
-            <a href="https://www.instagram.com/" class="instagram" target="_blank"><img src="../images/logo_instagram.png" alt="logoinstagram" width="15px"></a>
-            <a href="https://wwww.facebook.com/" target="_blank"><img src="../images/logofacebook.png" alt="logofacebook" class="facebook" width="15px"></a>
+<section id="icono"><a href="../index.html" id="inicio"><img src="../images/logo.png" alt="logo" height="80px"></a></section>
+<section id="nav">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/productos.html">Productos</a>
+              </li>
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/servicios.html">Servicios</a>
+              </li>
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/quienes_somos.html">¿Quienes somos?</a>
+              </li>
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/donde_encontrarnos.html">¿Donde encontrarnos?</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="buscar" placeholder="Que estas buscando?" aria-label="buscar">
+              <button id="botondebusqueda" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</section>
+<section id="redesmenu">
+    <div><a href="https://www.instagram.com/" target="_blank"><img src="../images/logo_instagram.png" alt="logo insta" width="20px"></a></div>
+    <div><a href="https://www.facebook.com/" target="_blank"><img src="../images/logofacebook.png" alt="logo facebook" width="20px"></a></div>
+</section>
     </header>
-    <main>
-        <h1 style="color:#4717f6 ;">¿Quienes Somos?</h1>
 
-        <p style="color: #a239ca ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit nihil earum natus mollitia, ipsum ipsam asperiores magnam enim quasi facilis cumque distinctio numquam quae est perspiciatis! Temporibus, nostrum Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam natus dolore repellendus eaque, libero recusandae eligendi? Nesciunt culpa dicta veniam magnam veritatis? Quisquam, doloribus distinctio consectetur recusandae soluta culpa voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nisi nesciunt, amet expedita maiores libero aperiam ipsam unde laboriosam possimus deleniti. Nihil minus doloribus et architecto voluptatum voluptates esse id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic molestias vitae deserunt. Obcaecati sequi voluptate, omnis error ab ipsum porro at natus culpa corrupti eos nulla possimus. Vel, recusandae.</maxime></p>
-        <img src="../images/quienessomos.jpg" alt="equipo" width="100%">
-
-
-
+    <main id="mainquienes">
+        <h1>¿Quienes somos?</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sed necessitatibus sint adipisci animi dolorem iste fuga. Soluta eveniet quas esse cupiditate quos, odio et. Esse hic ipsa tempore sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis quibusdam reiciendis distinctio odit exercitationem architecto fugiat iste ducimus aperiam recusandae ipsum eius ad, itaque expedita culpa cupiditate. Ea, consectetur.</p>
+        <div><img  src="../images/quienessomos2.jpg" alt=""></div>
+        
+        
 
     </main>
 
+
     <footer>
-        <div class="footer__cajalogo">
-        <a  href="../index.html"><img src="../images/logo.png" alt="logo" height="200px"></a>
-        </div>
-        <div class="footer__lista">
-            <ul>
-                <li class="footer__item"><a href="../pages/productos.html">Productos</a></li>
-                <li class="footer__item"><a href="../pages/servicios.html">Servicios</a></li>
-                <li class="footer__item"><a href="../pages/quienes_somos.html">¿Quieres Somos?</a></li>
-                <li class="footer__item"><a href="../pages/donde_encontrarnos.html">¿Donde encontrarnos?</a></li>
-                <li class="footer__item"><a href="../pages/ingreso.html">Ingreso/Registro</a></li>
-            </ul>
-        </div>
+    <section id="inoconofooter"> <a  href="#arriba"><img src="../images/logo.png" alt="logo" height="200px"></a></section>
+    <section id="navfooter">
+      <ul>
+        <li class="footer__item"><a href="../pages/productos.html">Productos</a></li>
+        <li class="footer__item"><a href="../pages/servicios.html">Servicios</a></li>
+        <li class="footer__item"><a href="../pages/quienes_somos.html">¿Quieres Somos?</a></li>
+        <li class="footer__item"><a href="../pages/donde_encontrarnos.html">¿Donde encontrarnos?</a></li>
+        <li class="footer__item"><a href="../pages/ingreso.html">Ingreso/Registro</a></li>
+    </ul>
+    
+    </section>
+    <section id="contactofooter">
+    
+      <ul class="listacontactofooter">
+        <li><h3>Contacto</h3></li>
+        <li>Tel: 3815046576</li>
+        <li>Copyrigth</li>
+      </ul>
+    
+    
+    
+    </section>
+    
     </footer>
-    <a class="wpp" href="https://walink.co/b481ba" target="_blank"><img src="../images/wpp.png" alt="wpp" width="70pxs"></a>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

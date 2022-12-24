@@ -4,57 +4,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/logo.png">
-    <title>¿Donde encontrarnos?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>K-STORE</title>
 </head>
-<body>
-    <header>
-            <div class="menu__caja__logo">
-                <a href="../index.html" id="arriba"><img src="../images/logo.png" alt="logo" class="menu__logo"></a>
-            </div>
-            <nav class="menu__barra">
-                <ul>
-                    <li class="menu__item"><a href="../pages/productos.html">Productos</a></li>
-                    <li class="menu__item"><a href="../pages/servicios.html">Servicios</a></li>
-                    <li class="menu__item"><a href="../pages/quienes_somos.html">¿Quienes Somos?</a></li>
-                    <li class="menu__item active "><a href="../pages/donde_encontrarnos.html">¿Donde encontrarnos?</a></li>
-                    <li class="menu__item"><a href="../pages/ingreso.html">Ingreso/Registro</a></li>
-                    <li class="menu__item">
-                        <form>
-                            <input  type="search" name="q" placeholder="Buscar" />
-                            <input class="menu__buscar" type="submit" value="¡Vamos!" />
-                        </form></li>
-                </ul>
-                
-            </nav>
-            <a href="https://www.instagram.com/" class="instagram" target="_blank"><img src="../images/logo_instagram.png" alt="logoinstagram" width="15px"></a>
-            <a href="https://wwww.facebook.com/" target="_blank"><img src="../images/logofacebook.png" alt="logofacebook" class="facebook" width="15px"></a>
+<body id="grilladonde">
 
-    </header>
-    <main>
-        <h1 class="titulos">¿Donde encontrarnos?</h1>
+<header>
+<section id="icono"><a href="../index.html" id="inicio"><img src="../images/logo.png" alt="logo" height="80px"></a></section>
+<section id="nav">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/productos.html">Productos</a>
+              </li>
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/servicios.html">Servicios</a>
+              </li>
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/quienes_somos.html">¿Quienes somos?</a>
+              </li>
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/donde_encontrarnos.html">¿Donde encontrarnos?</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="buscar" placeholder="Que estas buscando?" aria-label="buscar">
+              <button id="botondebusqueda" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</section>
+<section id="redesmenu">
+    <div><a href="https://www.instagram.com/" target="_blank"><img src="../images/logo_instagram.png" alt="logo insta" width="20px"></a></div>
+    <div><a href="https://www.facebook.com/" target="_blank"><img src="../images/logofacebook.png" alt="logo facebook" width="20px"></a></div>
+</section>
+</header>
+
+<main id="maindonde">
+<section>
+        <div><h1>PODES ENCONTRARNOS EN</h1></div>
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1258.8048650846074!2d-65.21100465144148!3d-26.826023400515762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c150117c389%3A0xe053241e42ca8e78!2sDGV%2C%20Pcia%20de%20C%C3%B3rdoba%201012%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1669140710412!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
         </div>
-        <p class="texto__mapa">Cordoba 1012, Tucumán-San Miguel de Tucumán</p>
 
-    </main>
+   
+        <div> <p class="texto__mapa">Cordoba 1012, Tucumán-San Miguel de Tucumán</p>
+        </div>
+   
+    </section>
 
-    <footer>
-        <div class="footer__cajalogo">
-        <a  href="../index.html"><img src="../images/logo.png" alt="logo" height="200px"></a>
-        </div>
-        <div class="footer__lista">
-            <ul>
-                <li class="footer__item"><a href="../pages/productos.html">Productos</a></li>
-                <li class="footer__item"><a href="../pages/servicios.html">Servicios</a></li>
-                <li class="footer__item"><a href="../pages/quienes_somos.html">¿Quieres Somos?</a></li>
-                <li class="footer__item"><a href="../pages/donde_encontrarnos.html">¿Donde encontrarnos?</a></li>
-                <li class="footer__item"><a href="../pages/ingreso.html">Ingreso/Registro</a></li>
-            </ul>
-        </div>
-    </footer>
-    <a class="wpp" href="https://walink.co/b481ba" target="_blank"><img src="../images/wpp.png" alt="wpp" width="70pxs"></a>
+
+
+</main>
+
+
+
+<footer>
+    <section id="inoconofooter"> <a  href="#arriba"><img src="../images/logo.png" alt="logo" height="200px"></a></section>
+    <section id="navfooter">
+      <ul>
+        <li class="footer__item"><a href="../pages/productos.html">Productos</a></li>
+        <li class="footer__item"><a href="../pages/servicios.html">Servicios</a></li>
+        <li class="footer__item"><a href="../pages/quienes_somos.html">¿Quieres Somos?</a></li>
+        <li class="footer__item"><a href="../pages/donde_encontrarnos.html">¿Donde encontrarnos?</a></li>
+        <li class="footer__item"><a href="../pages/ingreso.html">Ingreso/Registro</a></li>
+    </ul>
+    
+    </section>
+    <section id="contactofooter">
+    
+      <ul class="listacontactofooter">
+        <li><h3>Contacto</h3></li>
+        <li>Tel: 3815046576</li>
+        <li>Copyrigth</li>
+      </ul>
+    
+    
+    
+    </section>
+    
+</footer>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,7 +9,7 @@
     height:500vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr repeat(4,1fr) 0.2fr;
+    grid-template-rows: 0.15fr repeat(4,1fr) 0.2fr;
     grid-template-areas: 
     "header"
     "main"
@@ -361,7 +361,7 @@ footer {
 
 #contactofooter {
     grid-area: contactofooter;
-    color: #4717f6;
+    color: #6f04d9;
     list-style: none;
 }
 .listacontactofooter {
@@ -516,6 +516,107 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+
+/* PAGINA SERVICIOS */
+
+#grillaservicios {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 1fr 0.2fr;
+    grid-template-areas:
+    "header"
+    "mainservicios"
+    "footer"
+
+    ;
+}
+
+
+#main_servicios {
+    grid-area: mainservicios ;
+    background-color: #0e0b16;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.1fr 1fr 1fr;
+    grid-template-areas: 
+    "tituloservicios"
+    "reparacion_de_pc"
+    "iptv"
+    ;
+}
+
+#tituloservicios {
+    grid-area: tituloservicios;
+    color: #6f04d9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#reparacion_de_pc {
+    grid-area: reparacion_de_pc;
+    color: #4717f6;
+    text-align: center;
+  
+}
+
+
+#iptv {
+    grid-area: iptv;
+    color: #4717f6;
+    text-align: center;
+}
+
+
+/* PAGINA QUIENES SOMOS */
+
+
+#grillaquienes {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:0.1 0.3fr 0.2fr ;
+    grid-template-areas: 
+    "header"
+    "mainquienes"
+    "footer"
+    ;
+}
+
+#mainquienes {
+    grid-area: mainquienes;
+    background-color: #0e0b16;
+    color: #6f04d9;
+    text-align: center;
+}
+
+/* PAGINA DONDE ENCONTRARNOS */
+
+
+#grilladonde {
+    width: 99vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:0.01fr 1fr 0.1fr;
+    grid-template-areas:
+    "header"
+    "maindonde"
+    "footer" ;
+}
+
+#maindonde {
+    grid-area: maindonde;
+    display: grid;
+    grid-template-rows: 1fr !important;
+    background-color: #0e0b16;
+    color: #6f04d9;
+    text-align: center;
 }
 
 
