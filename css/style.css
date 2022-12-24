@@ -153,19 +153,28 @@ main {
 }
 #titulocategoria {
     color: #4717f6;
-}
+    text-align: center;
+}   
 
 #categoria1 {
     grid-area: categoria1;
+    display: flex;
+    justify-content: center;
 }
 #categoria2 {
     grid-area: categoria2;
+    display: flex;
+    justify-content: center;
 }
 #categoria3 {
     grid-area: categoria3;
+    display: flex;
+    justify-content: center;
 }
 #categoria4 {
     grid-area: categoria4;
+    display: flex;
+    justify-content: center;
 }
 
 .flip-card {
