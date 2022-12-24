@@ -230,6 +230,11 @@ main {
     color: #ffffff;
     
 }
+.flip-card-back h3 {
+    margin: 0;
+    color: #ffffff;
+    
+}
 
 
 
@@ -368,12 +373,164 @@ footer {
     right: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+
+
+
+
+/* PAGINA PRODUCTOS */
+
+#grillaproductos {
+    width: 99vw;
+    height: 400vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:0.01fr repeat(2, 1fr) 0.1fr;
+    grid-template-areas:
+    "header"
+    "mainproductos"
+    "mainproductos"
+    "footer" ;
+}
+
+#mainproductos {
+    grid-area: mainproductos;
+    background-color: #0e0b16;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 0.5fr);
+    grid-template-areas:
+    "teclados"
+    "auriculares"
+    "fuentes"
+    "mouses"
     
+    ;
+}
+
+#teclados {
+    grid-area: teclados;
+    background-color: #0e0b16;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.3fr 0.5fr;
+    grid-template-areas:
+    "teclados-titulo "
+    "teclados-tarjetas ";
+}
+
+
+#teclados-titulo {
+    grid-area: teclados-titulo;
+    color: #6f04d9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#teclados-tarjetas {
+    grid-area: teclados-tarjetas;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+#auriculares {
+    grid-area: auriculares;
+    background-color: #0e0b16;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.3fr 0.5fr;
+    grid-template-areas:
+    "auriculares-titulo "
+    "auriculares-tarjetas ";
+}
+
+#auriculares-titulo {
+    grid-area: auriculares-titulo;
+    color: #6f04d9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#auriculares-tarjetas {
+    grid-area: auriculares-tarjetas;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+#fuentes {
+    grid-area: fuentes;
+    background-color: #0e0b16;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.3fr 0.5fr;
+    grid-template-areas:
+    "fuentes-titulo "
+    "fuentes-tarjetas ";
+}
+
+#fuentes-titulo {
+    grid-area: fuentes-titulo;
+    color: #6f04d9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#fuentes-tarjetas {
+    grid-area: fuentes-tarjetas;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+#mouses {
+    grid-area: mouses;
+    background-color: #0e0b16;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.3fr 0.5fr;
+    grid-template-areas:
+    "mouses-titulo"
+    "mouses-tarjetas";
+}
+
+#mouses-titulo {
+    grid-area: mouses-titulo;
+    color: #6f04d9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#mouses-tarjetas {
+    grid-area: mouses-tarjetas;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    #grillaproductos {
+        height: 500vh;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-    
+    #grillaproductos {
+        height: 600vh;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -386,6 +543,8 @@ footer {
         "categoria1 categoria2"
         "categoria3 categoria4"
         ;}
+
+       
     
 }
 
@@ -409,6 +568,10 @@ footer {
            align-items: center;
            flex-wrap: wrap;
             background-color: #0e0b16;
+        }
+
+        #grillaproductos {
+            height: 900vh;
         }
 
 
@@ -440,8 +603,10 @@ footer {
    
   
     }
+
+  
     
 }
 @media screen and (max-width: 320px) {
-    
+  
 }

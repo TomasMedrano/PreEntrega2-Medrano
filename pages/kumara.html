@@ -4,92 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/logo.png">
-    <title>Mouses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>K-STORE</title>
 </head>
-<body>
-    <header>
-            <div class="menu__caja__logo">
-                <a href="../index.html" id="arriba"><img src="../images/logo.png" alt="logo" class="menu__logo"></a>
-            </div>
-            <nav class="menu__barra">
-                <ul>
-                    <li class="menu__item"><a href="../pages/productos.html">Productos</a></li>
-                    <li class="menu__item"><a href="../pages/servicios.html">Servicios</a></li>
-                    <li class="menu__item"><a href="../pages/quienes_somos.html">¿Quienes Somos?</a></li>
-                    <li class="menu__item "><a href="../pages/donde_encontrarnos.html">¿Donde encontrarnos?</a></li>
-                    <li class="menu__item"><a href="../pages/ingreso.html">Ingreso/Registro</a></li>
-                    <li class="menu__item">
-                        <form>
-                            <input  type="search" name="q" placeholder="Buscar" />
-                            <input class="menu__buscar" type="submit" value="¡Vamos!" />
-                        </form></li>
-                </ul>
-                
-            </nav>
-            <a href="https://www.instagram.com/" class="instagram" target="_blank"><img src="../images/logo_instagram.png" alt="logoinstagram" width="15px"></a>
-            <a href="https://wwww.facebook.com/" target="_blank"><img src="../images/logofacebook.png" alt="logofacebook" class="facebook" width="15px"></a>
-    </header>
-    <main>
-        <div>
-            <div class="articulo__tituloyprecio">
-                <h1 class="articulo__titulo">TECLADO KUMARA RGB K552</h1>
-                <h3 class="articulo__precio">$10000</h3>
-                <input class="articulo__añadir" type="submit" value="Añadir al carrito" >
-                <p class="articulo__stock">En stock : 20</p>
-            </div>
-            <div>
-            <img src="../images/kumaraarticulo.jpg" alt="teclado kumara" class="articulo__imagen1">
-            </div>
-            <div>
-                <h2 class="articulo__subtitulo">Principales Caracteristicas</h2>
-                <img class="articulo__imagencontenidoizquierda"  src="../images/kumara2.jpg" alt="kumara">
-                <p class="articulo__textoizquierda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quibusdam exercitationem dicta ullam modi, nemo illum, dignissimos architecto repudiandae voluptatum repellat deleniti deserunt provident, qui sequi veniam. Veniam, neque atque.</p>
-            </div>
-            <div>
-                <img class="articulo__imagencontenidoderecha"  src="../images/kumara3.jpg" alt="kumara">
-                <p class="articulo__textoderecha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quibusdam exercitationem dicta ullam modi, nemo illum, dignissimos architecto repudiandae voluptatum repellat deleniti deserunt provident, qui sequi veniam. Veniam, neque atque.</p>
-            </div>
-            <div>
+<body id="grillaproductos">
 
-                <img class="articulo__imagencontenidoizquierda"  src="../images/kumara4.jpg" alt="kumara">
-                <p class="articulo__textoizquierda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quibusdam exercitationem dicta ullam modi, nemo illum, dignissimos architecto repudiandae voluptatum repellat deleniti deserunt provident, qui sequi veniam. Veniam, neque atque.</p>
-
-            </div>
-            <div>
-            <h3 class="titulos">Review</h3>
-            <iframe width="100%" height="900px" src="https://www.youtube.com/embed/2X3UTmUbaq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="articulo__video"></iframe>
-            </div>
-            <div>
-                <h3 class="categorias__titulo">ESPECIFICACIONES</h3>
-                <ul>
-                    <li class="articulo__especificaciones">Tipo teclado: Mecanico</li>
-                    <li class="articulo__especificaciones">Tipo Switch Outemu blue</li>
-                    <li class="articulo__especificaciones">reposa muñecas: no</li>
-                    <li class="articulo__especificaciones">retroiluminado: si RGB Chroma</li>
-                    <li class="articulo__especificaciones">Construccion:Plastico ABS</li>
-                    <li class="articulo__especificaciones">Antisalpicaduras: Si</li>
-                </ul>
-
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer__cajalogo">
-        <a  href="../index.html"><img src="../images/logo.png" alt="logo" height="200px"></a>
-        </div>
-        <div class="footer__lista">
-            <ul>
-                <li class="footer__item"><a href="../pages/productos.html">Productos</a></li>
-                <li class="footer__item"><a href="../pages/servicios.html">Servicios</a></li>
-                <li class="footer__item"><a href="../pages/quienes_somos.html">¿Quieres Somos?</a></li>
-                <li class="footer__item"><a href="./pages/donde_encontrarnos.html">¿Donde encontrarnos?</a></li>
-                <li class="footer__item"><a href="../pages/ingreso.html">Ingreso/Registro</a></li>
+<header>
+<section id="icono"><a href="../index.html" id="inicio"><img src="../images/logo.png" alt="logo" height="100px"></a></section>
+<section id="nav">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/productos.html">Productos</a>
+              </li>
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/servicios.html">Servicios</a>
+              </li>
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/quienes_somos.html">¿Quienes somos?</a>
+              </li>
+              <li class="menu__item">
+                <a  aria-current="page" href="../pages/donde_encontrarnos.html">¿Donde encontrarnos?</a>
+              </li>
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="buscar" placeholder="Que estas buscando?" aria-label="buscar">
+              <button id="botondebusqueda" type="submit">Buscar</button>
+            </form>
+          </div>
         </div>
-    </footer>
-    <a class="wpp" href="https://walink.co/b481ba" target="_blank"><img src="../images/wpp.png" alt="wpp" width="70pxs"></a>
-</body>
-</html>
+      </nav>
+</section>
+<section id="redesmenu">
+    <div><a href="https://www.instagram.com/" target="_blank"><img src="../images/logo_instagram.png" alt="logo insta" width="20px"></a></div>
+    <div><a href="https://www.facebook.com/" target="_blank"><img src="../images/logofacebook.png" alt="logo facebook" width="20px"></a></div>
+</section>
+</header>
