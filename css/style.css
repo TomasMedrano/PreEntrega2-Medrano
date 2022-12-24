@@ -9,7 +9,7 @@
     height:500vh;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 0.1fr repeat(4,1fr) 0.1fr;
+    grid-template-rows: 0.1fr repeat(4,1fr) 0.2fr;
     grid-template-areas: 
     "header"
     "main"
@@ -55,7 +55,6 @@ header {
     text-decoration: none;
     color: #4717f6;
 }
-
 
 #botondebusqueda{
     
@@ -123,11 +122,9 @@ main {
     grid-area: main;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr) 0.5fr;
     grid-template-areas: 
     "carrousel"
-    "categorias"
-    "categorias"
     "categorias"
     "productos_destacados"
     "nuevos_ingresos"
@@ -144,15 +141,30 @@ main {
 #categorias {
     grid-area: categorias;
     background-color:  #0e0b16;
-    display: flex;
-    justify-content: space-around;
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0,1fr 1fr;
+    grid-template-areas: 
+    "titulocategoria titulocategoria titulocategoria titulocategoria"
+    "categoria1 categoria2 categoria3 categoria4"
+    ;
 
-    
-    
 }
-.titulos {
-    color: #6f04d9;
+#titulocategoria {
+    color: #4717f6;
+}
+
+#categoria1 {
+    grid-area: categoria1;
+}
+#categoria2 {
+    grid-area: categoria2;
+}
+#categoria3 {
+    grid-area: categoria3;
+}
+#categoria4 {
+    grid-area: categoria4;
 }
 
 .flip-card {
@@ -218,16 +230,102 @@ main {
 
 #productos_destacados {
     grid-area: productos_destacados;
+    background-color: #0e0b16;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas: 
+    "titulo-producto-destacado"
+    "arruselproductosdestacados"
+    ;
 }
+
+#titulo-producto-destacado {
+    grid-area: titulo-producto-destacado ;
+    color: #4717f6;
+}
+
+#arruselproductosdestacados {
+    grid-area: arruselproductosdestacados;
+}
+
+
+
+
+
 #nuevos_ingresos {
     grid-area: nuevos_ingresos;
+    background-color: #0e0b16;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "titulonuevosingresos"
+    "nuevoingreso"
+    "descripcioningreso"
+    "imagendeingreso"
+    "videodeingreso"
+    ;
 }
+
+#titulonuevosingresos {
+    grid-area: titulonuevosingresos;
+    color: #4717f6;
+}
+
+#nuevoingreso {
+    grid-area: nuevoingreso;
+    color: #6f04d9;
+}
+
+#descripcioningreso {
+    grid-area: descripcioningreso;
+    color: #ffffff;
+}
+
+#imagendeingreso {
+    grid-area: imagendeingreso;
+}
+
+#videodeingreso {
+    grid-area: videodeingreso;
+}
+
+
 #marcas {
     grid-area: marcas;
+    display: flex;
+    justify-content: center;
+   justify-content: space-evenly;
+   align-items: center;
+    background-color: #0e0b16;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    
+    "marcaredragon marcalogitech marcaxiaomi"
+    ; */
 }
+
+/* #marcalogitech {
+    grid-area: marcalogitech;
+}
+
+#marcaxiaomi {
+    grid-area: mmarcaxiaomi;
+}
+#marcaredragon {
+    grid-area: marcaredragon;
+} */
+
+
+
+
 
 footer {
     grid-area: footer;
+    background-color: black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: auto;
@@ -238,12 +336,35 @@ footer {
 
 #inocnofooter {
     grid-area: iconofooter;
+
 }
+
 
 #navfooter {
     grid-area: navfooter;
 }
 
+.footer__item {
+    
+    padding: 10px;
+    list-style: none;
+}
+
+.footer__item a {
+    text-decoration: none;
+    color: #6f04d9;
+}
+
 #contactofooter {
     grid-area: contactofooter;
+    color: #4717f6;
+    list-style: none;
+}
+.listacontactofooter {
+    list-style: none;
+}
+.wpp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
